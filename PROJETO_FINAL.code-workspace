@@ -1,0 +1,16 @@
+{
+    "folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\Conexão"
+		},
+		{
+			"path": "..\\EXERCICIOS"
+		}
+	],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "PROJETO_FINAL"
+    }
+}
