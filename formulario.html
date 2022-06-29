@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Session storage</title>
+    <script type="text/javascript">
+        function AssignValues() {
+            sessionStorage.setItem("nome", document.form1.text1.value);
+            sessionStorage.setItem("endereco", document.form1.text2.value);
+            sessionStorage.setItem("telefone", document.form1.text3.value);
+        }
+
+        function Value1() {
+            alert("Value 1 is " + sessionStorage.getItem("nome"));
+        }
+
+        function Value2() {
+            alert("Value 2 is " + sessionStorage.getItem("endereco"));
+        }
+
+        function Value3() {
+            alert("Value 3 is " + sessionStorage.getItem("telefone"));
+        }
+    </script>
+</head>
+
+<body>
+    <form name="form1">
+        <input type="text" name="nome" placeholder="Nome">
+        <br>
+        <input type="text" name="endereco" placeholder="Endereço">
+        <br>
+        <input type="text" name="telefone" placeholder="Telefone">
+        <br>
+        <input type="button" value="Salvar" onClick="AssignValues()">
+        <br>
+        <input type="button" value="O nome é " onClick="Value1()">
+        <br>
+        <input type="button" value="O endereço é " onClick="Value2()">
+        <br>
+        <input type="button" value="O telefone é" onClick="Value3()">
+        <br>
+    </form>
+</body>
+
+</html>
