@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="/CSS/styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PET SHOP THOMAS CADASTRO DE CLIENTES</title>
 
@@ -17,19 +17,22 @@
 
         <fieldset>
             <!--nome completo, endereço, nome do pet, raça, idade do pet, doenças-->
-            <label for="nomecompleto">Nome do tutor do pet</label><br>
-            <input type="text " id="nomecompleto " name="nomecompleto " placeholder="NomeCompleto" value="Nome completo "><br><br>
-            <label for="endereco">Endereço</label><br>
-            <input type="text " id="endereco " name="endereco " value="Endereço Completo "><br><br>
-            <label for="nomePet">Nome do Pet</label><br>
-            <input type="text" id="nomePet" name="nomePet" value="Nome do pet "><br><br>
-            <label for="raca">Raça </label><br>
-            <input type="text" id="raca" name="raca" value="Raça"><br><br>
-            <label for="lname ">Idade do Pet</label><br>
-            <input type="text " id="idadePet " name="idadePet " value="Idade do pet "><br><br>
+            <!--A tag REQUIRED obriga o preenchimento dos dados nos campos-->
+            <label for="nomecompleto">Nome do tutor do pet*</label><br>
+            <input type="text " id="nomecompleto" name="nomecompleto" value="" required><br><br>
+            <label for="endereco">Endereço*</label><br>
+            <input type="text " id="endereco" name="endereco" value="" required><br><br>
+            <label for="nomePet">Nome do Pet*</label><br>
+            <input type="text" id="nomePet" name="nomePet" value="" required><br><br>
+            <label for="raca">Raça*</label><br>
+            <input type="text" id="raca" name="raca" value="" required><br><br>
+            <label for="lname ">Idade do Pet*</label><br>
+            <input type="text " id="idadePet" name="idadePet " value="" required><br><br>
             <label for="lname ">Histórico de doenças</label><br>
-            <input type="text " id="doenca " name="doenca " value="Doenças "><br><br>
+            <input type="text " id="doenca" name="doenca" value=""><br><br>
+            <br>* Campos obrigatórios<br><br>
             <input type="submit" value="Salvar dados">
+
             <input type="reset" value="Limpar dados">
         </fieldset>
     </form>

@@ -3,7 +3,7 @@ p.center {
 }
 
 body {
-    background-color: rgb(140, 206, 156);
+    background-color: rgba(151, 198, 105, 0.779);
     color: rgb(1, 9, 17);
 }
 
@@ -24,20 +24,4 @@ img {
     100% {
         transform: translatex(0px);
     }
-}
-
-h2 {
-    text-align: center;
-}
-
-fieldset {
-    display: block;
-    color: blue;
-    margin-left: 2px;
-    margin-right: 2px;
-    padding-top: 0.35em;
-    padding-bottom: 0.625em;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
-    border: 2px groove (internal value);
 }
