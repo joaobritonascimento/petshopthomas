@@ -6,23 +6,45 @@
     <link rel="stylesheet" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PET SHOP THOMAS CONSULTA</title>
-    <!--<style>
-    p.botton { vertical-align: middle; color: rgb(28, 159, 43); }
-    </style>
--->
 </head>
 
 <body>
-    <a href="index.html">Inicial</a>
-    <br>O cliente entra com o dia, mês, ano e o horário que deseja.
-    <br>E também seleciona o veterinário que desejar (criar uma lista de veterinários).
-    <br>Deverá conter também uma caixa de mensagem para o cliente escrever o motivo da consulta.
+    <nav>
+        <a href="home.html">Home</a> |
+        <a href="cadastro.html">Cadastro</a> |
+        <a href="banho.html">Banho</a> |
+        <a href="tosa.html">Tosa</a> |
+        <a href="consulta.html">Consulta</a>
+    </nav>
 
+    <h1 id="titulo"><br>Marcação de consulta</h2>
+        <!--<br>Deverá conter também uma caixa de mensagem para o cliente escrever o motivo da consulta.-->
+        <fieldset>
+            <div>
+                <label>Selecione abaixo o veterinário que deseja para a consulta</label><br><br>
+                <select id="veterinario">
+            <option selected disabled value="">Selecione</option>
+            <option> Dr. Roberto Tapanakara</option>
+            <option> Dr. Alan Brado</option>
+            <option> Dra. Mijaru Nakama</option>
+            <option> Dr. Silas Kando</option>
+            <option> Dr. Sujiro Kesuma</option>
+            </select>
+            </div>
+
+            <div>
+                <br>
+                <label>Informe o motivo da consulta - Data de início dos sintomas, se houver</label><br><br>
+                <textarea id="motivoConsulta" style="width: 45em" cols="90" rows="15"></textarea>
+            </div>
+
+            <br><button type="submit">Concluído</button>
+        </fieldset>
 </body>
 
 
 <footer>
-    <p class="botton">Autor:Thomas - O cão - <a href="autor.html">Sobre o autor</a>
+    <p class="botton ">Autor:Thomas - O cão - <a href="autor.html ">Sobre o autor</a>
 </footer>
 
 </html>
