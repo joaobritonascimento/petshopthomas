@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="./CSS/styles.css">
     <title>PET SHOP THOMAS CADASTRO DE CLIENTES</title>
 
 </head>
@@ -14,20 +14,23 @@
 
     <form action="confere_cadastro.html">
 
-        <!--nome completo, endereço, nome do pet, raça, idade do pet, doenças-->
-        <label for=" nomecompleto ">Nome do tutor do pet</label><br>
-        <input type="text " id="nomecompleto " name="nomecompleto " value="Nome completo "><br>
-        <label for="endereco ">Last name</label><br>
-        <input type="text " id="endereco " name="endereco " value="Endereço Completo "><br><br>
-        <label for="lname ">Last name:</label><br>
-        <input type="text " id="lname " name="lname " value="Nome do pet "><br><br>
-        <label for="lname ">Last name:</label><br>
-        <input type="text " id="lname " name="lname " value="Raça "><br><br>
-        <label for="lname ">Idade do Pet</label><br>
-        <input type="text " id="idadePet " name="idadePet " value="Idade do pet "><br><br>
-        <label for="lname ">Histórico de doenças</label><br>
-        <input type="text " id="doenca " name="doenca " value="Doenças "><br><br>
-        <input type="submit " value="Salvar dados ">
+        <fieldset>
+            <!--nome completo, endereço, nome do pet, raça, idade do pet, doenças-->
+            <label for="nomecompleto">Nome do tutor do pet</label><br>
+            <input type="text " id="nomecompleto " name="nomecompleto " placeholder="NomeCompleto" value="Nome completo "><br><br>
+            <label for="endereco">Endereço</label><br>
+            <input type="text " id="endereco " name="endereco " value="Endereço Completo "><br><br>
+            <label for="nomePet">Nome do Pet</label><br>
+            <input type="text" id="nomePet" name="nomePet" value="Nome do pet "><br><br>
+            <label for="raca">Raça </label><br>
+            <input type="text" id="raca" name="raca" value="Raça"><br><br>
+            <label for="lname ">Idade do Pet</label><br>
+            <input type="text " id="idadePet " name="idadePet " value="Idade do pet "><br><br>
+            <label for="lname ">Histórico de doenças</label><br>
+            <input type="text " id="doenca " name="doenca " value="Doenças "><br><br>
+            <input type="submit" value="Salvar dados">
+            <input type="reset" value="Limpar dados">
+        </fieldset>
     </form>
 </body>
 
