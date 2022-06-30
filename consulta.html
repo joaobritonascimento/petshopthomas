@@ -17,12 +17,12 @@
         <a href="consulta.html">Consulta</a>
     </nav>
 
-    <h1 id="titulo"><br>Marcação de consulta</h2>
-        <!--<br>Deverá conter também uma caixa de mensagem para o cliente escrever o motivo da consulta.-->
-        <fieldset>
-            <div>
-                <label>Selecione abaixo o veterinário que deseja para a consulta</label><br><br>
-                <select id="veterinario">
+    <h1 id="titulo">Marcação de consulta</h1>
+    <!--<br>Deverá conter também uma caixa de mensagem para o cliente escrever o motivo da consulta.-->
+    <fieldset>
+        <div>
+            <label>Selecione abaixo o veterinário que deseja para a consulta</label><br>
+            <select id="veterinario">
             <option selected disabled value="">Selecione</option>
             <option> Dr. Roberto Tapanakara</option>
             <option> Dr. Alan Brado</option>
@@ -30,21 +30,22 @@
             <option> Dr. Silas Kando</option>
             <option> Dr. Sujiro Kesuma</option>
             </select>
-            </div>
+        </div>
 
-            <div>
-                <br>
-                <label>Informe o motivo da consulta - Data de início dos sintomas, se houver</label><br><br>
-                <textarea id="motivoConsulta" style="width: 45em" cols="90" rows="15"></textarea>
-            </div>
+        <div class="campoconsulta">
+            <!--classe para o botao concluido-->
+            <br>
+            <label>Informe o motivo da consulta - Data de início dos sintomas, se houver</label><br>
+            <textarea id="motivoConsulta" style="width: 45em" cols="90" rows="15" name="motivoConsulta"></textarea>
+        </div>
 
-            <br><button type="submit">Concluído</button>
-        </fieldset>
+        <button type="submit">Concluído</button>
+    </fieldset>
 </body>
 
 
 <footer>
-    <p class="botton ">Autor:Thomas - O cão - <a href="autor.html ">Sobre o autor</a>
+    <p class=" botton ">Autor:Thomas - O cão - <a href="autor.html ">Sobre o autor</a>
 </footer>
 
 </html>
