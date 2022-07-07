@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/joaobritonascimento/petshopthomas/issues"
   },
-  "homepage": "https://github.com/joaobritonascimento/petshopthomas#readme"
+  "homepage": "https://github.com/joaobritonascimento/petshopthomas#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0-beta1"
+  }
 }
