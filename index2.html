@@ -4,20 +4,67 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>carousel Slider Bootstrap</title>
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
-    <picture>
-        <source srcset="" type="image/svg+xml">
-        <img src="banner1.jpg" class=" img-fluid img-thumbnail " alt="Promoção">
-        <img src="banner2.jpg" class=" img-fluid img-thumbnail " alt="... ">
-        <img src="banner3.jpg" class=" img-fluid img-thumbnail " alt="... ">
-        <img src="banner4.jpg" class=" img-fluid img-thumbnail " alt="... ">
-    </picture>
+    <style>
+        .carousel-item {
+            height: 28rem;
+            background: #777;
+            color: white;
+            position: relative;
+        }
+        
+        .container {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding-bottom: 50px;
+        }
+    </style>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCaroseul" data-slide-to="0" class="active"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active " style="background-image:url(./banner1.jpg);">
+                <div class="container ">
+                    <h1>PROMOÇÃO DA SEMANA 1</h1>
+                    <p>Promoção da semana 1</p>
+                    <a href="#" class="btn btn-lg btn-primary ">Sign up today</a>
+                </div>
+            </div>
+
+            <div class="carousel-item ">
+                <div class="container" style="background-image:url(./banner2.jpg);">
+                    <h1>PROMOÇÃO DA SEMANA 2</h1>
+                    <p>Promoção da semana 2</p>
+                    <a href="# " class="btn btn-lg btn-primary">Sign up today</a>
+                </div>
+            </div>
+            <a href="#myCarousel" class="carousel-control.prev" role="button" data-slide="prev">
+                <span class="sr-only">Previus</span>
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </a>
+            <a href="#myCarousel" class="carousel-control.next" role="button" data-slide="next">
+                <span class="sr-only">Next</span>
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </a>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
 </body>
 
 </html>

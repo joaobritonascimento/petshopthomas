@@ -2,76 +2,90 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PET SHOP THOMAS</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--link rel="stylesheet" href="styles.css"-->
+    <title>Bootstrap Example</title>
 </head>
 
 <body>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     <nav>
-        <a href="home.html ">Home</a>|
-        <a href="cadastro.html ">Cadastro</a>|
-        <a href="banho.html ">Banho</a>|
-        <a href="tosa.html ">Tosa</a>|
-        <a href="consulta.html ">Consulta</a>
+        <a href="home.html">Home</a>|
+        <a href="cadastro.html">Cadastro</a>|
+        <a href="banho.html">Banho</a>|
+        <a href="tosa.html">Tosa</a>|
+        <a href="consulta.html">Consulta</a>
     </nav>
 
     <main>
+        <div id="banner" class="carousel slide" data-bs-ride="carousel">
+            <div id=" indicadores " class="carousel-indicators">
 
-        <div id="carouselIndicadores" class="carousel slide" data - ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#carouselIndicadores" data - slide - to="0" class="active">
-                </li>
-                <li data-target="#carouselIndicadores" data - slide - to="1">
-                </li>
-                <li data-target="#carouselIndicadores" data - slide - to="2">
-                </li>
-                <li data-target="#carouselIndicadores" data - slide - to="3">
-                </li>
-            </ol>
-            <div class="carousel-inner">
+                <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#banner" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#banner" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#banner" data-bs-slide-to="3"></button>
+            </div>
+
+            <div id="imagens" class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="banner1.jpg" class="d block w-100" alt="Promoção da semana">
-                </div>
-                <div class=" carousel-item ">
-                    <img src="banner2. jpg" class="d block w-100" alt="Promoção da semana">
-                </div>
-                <div class="carousel-item ">
-                    <img src="banner3.jpg" class="d block w-100" alt="Promoção da semana">
+                    <img src="./banner1.jpg" class="d-block w-100">
                 </div>
                 <div class="carousel-item">
-                    <img src="banner4.jpg" class="d block w-100" alt="Promoção da semana">
+                    <img src="./banner2.jpg " class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./banner3.jpg" class="d-block w-100">
+                </div>
+                <div class="carousel-item">
+                    <img src="./banner4.jpg" class="d-block w-100">
                 </div>
             </div>
+            <button type="button" class="carousel-control-prev" data-bs-target="#banner" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+            <button type="button" class="carousel-control-next" data-bs-target="#banner" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
         </div>
         </div>
-        <a href="#carouselControl " class="carousel-control-prev " role="button " data-slide="prev ">
-            <span class="carousel-control-prev-icon " aria-hidden="true "></span>
-            <span class="sr-only "></span>
-        </a>
-        <a href="#carouselControl " class="carousel-control-next " role="button " data-slide="next ">
-            <span class="carousel-control-next-icon " aria-hidden="true "></span>
-            <span class="sr-only "></span>
-        </a>
     </main>
-    <section1>
-        <br>Section: Composta por 3 cards com figura e texto, com brinde por fidelidade. Alteração
-        <br>1) A cada 5 banhos, ganha - se 01 tosa.
-        <br>2) Faça um checkup completo com consulta e exames no seu pet
-        <br>e ganhe uma consulta com a nutricionista.
-        <br>3) A cada 5 banhos, ganhe um banho grátis.
-        <br>
-        <br>
-    </section1>
+
+
+    <div class="col-md-3">
+        <div class="card">
+            <h2>01</h2>
+            <div class="card-body">
+                <h5 class="card-title">FIDELIDADE</h5>
+                <P class="card-text">A cada 5 banhos, ganha-se 01 tosa</P>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <h2>02</h2>
+            <div class="card-body">
+                <h5 class="card-title">FIDELIDADE</h5>
+                <P class="card-text">Faça um checkup completo com consulta e exames no seu pet e ganhe uma consulta com a nutricionista.</P>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+            <h2>03</h2>
+            <div class="card-body">
+                <h5 class="card-title">FIDELIDADE</h5>
+                <P class="card-text">A cada 5 banhos , ganhe um banho grátis.</P>
+            </div>
+        </div>
+    </div>
     <section2>Deve ter um link, que abre um artigo da web sobre casos felizes com animais.
         <br>Ex: Adoção de pet.Cachorra que salvou bebê abandonado...
-        <br>Deve ser atraente para que o usuário sinta vontade de ler.Deve conter um campo para o usuário comentar o artigo.
-    </section2>
+        <br>Deve ser atraente para que o usuário sinta vontade de ler. Deve conter um campo para o usuário comentar o artigo. </section2>
+    <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
 </body>
 <footer>
-    <p class=" botton ">Autor: Thomas - O cão -<a href="autor.html ">Sobre o autor</a>
-</footer>
+    <p class=" botton ">Autor: Thomas - O cão -<a href="autor.html ">Sobre o autor</a></footer>
 
 </html>
