@@ -19,6 +19,7 @@
   "homepage": "https://github.com/joaobritonascimento/petshopthomas#readme",
   "dependencies": {
     "bootstrap": "^5.2.0-beta1",
+    "canvas": "^2.9.3",
     "jquery": "^3.6.0",
     "popper.js": "^1.16.1"
   }
