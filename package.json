@@ -1,26 +1,26 @@
 {
-  "name": "petshopthomas",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/joaobritonascimento/petshopthomas.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/joaobritonascimento/petshopthomas/issues"
-  },
-  "homepage": "https://github.com/joaobritonascimento/petshopthomas#readme",
-  "dependencies": {
-    "bootstrap": "^5.2.0-beta1",
-    "canvas": "^2.9.3",
-    "jquery": "^3.6.0",
-    "popper.js": "^1.16.1"
-  }
+    "name": "petshopthomas",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/joaobritonascimento/petshopthomas.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/joaobritonascimento/petshopthomas/issues"
+    },
+    "homepage": "https://github.com/joaobritonascimento/petshopthomas#readme",
+    "dependencies": {
+        "bootstrap": "^5.2.0-beta1",
+        "canvas": "^2.9.3",
+        "jquery": "^3.6.0",
+        "popper.js": "^1.16.1"
+    }
 }
