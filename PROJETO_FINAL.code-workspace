@@ -1,5 +1,5 @@
 {
-    "folders": [
+	"folders": [
 		{
 			"path": "."
 		},
@@ -10,7 +10,7 @@
 			"path": "..\\EXERCICIOS"
 		}
 	],
-    "settings": {
-        "liveServer.settings.multiRootWorkspaceName": "PROJETO_FINAL"
-    }
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "petshopthomas"
+	}
 }
