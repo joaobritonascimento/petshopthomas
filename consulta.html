@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <meta charset="UTF-8">
     <!--link rel="stylesheet" href="styles.css"-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +12,14 @@
 
 <body>
     <style>
-         body {
+        body {
             background-color: rgb(33, 37, 58);
-            background-image: linear-gradient (green, yellow);
-            height: auto;
+            color: gray;
         }
 
+        #motivoConsulta, #veterinario, #submit{
+            background-color: rgb(197, 193, 193);
+             }
     </style>
     <nav>
         <a href="index.html">Inicial</a>
@@ -33,12 +36,12 @@
         <div>
             <label>Selecione abaixo o veterinário que deseja para a consulta</label><br>
             <select id="veterinario">
-            <option selected disabled value="">Selecione</option>
-            <option> Dr. Roberto Tapanakara</option>
-            <option> Dr. Alan Brado</option>
-            <option> Dra. Mijaru Nakama</option>
-            <option> Dr. Silas Kando</option>
-            <option> Dr. Sujiro Kesuma</option>
+                <option selected disabled value="">Selecione</option>
+                <option> Dr. Roberto Tapanakara</option>
+                <option> Dr. Alan Brado</option>
+                <option> Dra. Mijaru Nakama</option>
+                <option> Dr. Silas Kando</option>
+                <option> Dr. Sujiro Kesuma</option>
             </select>
         </div>
 
@@ -46,7 +49,7 @@
             <!--classe para o botao concluido-->
             <br>
             <label>Informe o motivo da consulta - Data de início dos sintomas, se houver</label><br>
-            <textarea id="motivoConsulta" style="width: 45em" cols="90" rows="15" name="motivoConsulta"></textarea>
+            <textarea id="motivoConsulta" style="width: 45em" cols="100" rows="10" name="motivoConsulta"></textarea>
         </div>
 
         <button type="submit">Concluído</button>
