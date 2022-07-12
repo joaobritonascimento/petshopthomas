@@ -131,16 +131,18 @@
         }
 
         .container {
-            /*width:max-content;*/
-            padding: 20px;
+           
+            border: 1px solid black;
+           justify-content: center;
             display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
+            border: none;
+            max-height: 150px;
+
+        
         }
 
         .container .card {
-            position: left;
+            position: relative;
             padding: 10px;
             width: 310px;
             height: 200px;
@@ -163,15 +165,16 @@
             color: #fff;
             background-color: rgb(17, 19, 34) border-radius: 20px;
             text-decoration: none;
-            outline::backdrop;
+            outline: :backdrop;
             margin-top: 30px;
             box-sizing: content-box;
         }
 
+        /*Transição dos cards*/
         .container .card:hover {
             background-color: rgb(33, 37, 58);
             border: 1px solid rgba(222, 222, 247, 0.651);
-            transition: 1.4s;
+            transition: 0.5s;
             width: 320px;
             height: 230px;
         }
@@ -179,8 +182,6 @@
 
 
     <section>
-        <div class=""></div>
-
         <div class="container">
             <div class="card ">
                 <h2>FIDELIDADE</h2>
