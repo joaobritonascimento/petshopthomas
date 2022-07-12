@@ -7,14 +7,9 @@
 
  /*Transição dos cards*/
 
- P{
-    margin-top: auto;
-    color:red;
-
- }
  body {
     background-color: rgb(33, 37, 58);
-    color: gray;
+    color: whitesmoke;
 }
 
 a #menu {
