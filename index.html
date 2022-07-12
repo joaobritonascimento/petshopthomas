@@ -4,19 +4,22 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+        crossorigin="anonymous">
     <!--link rel="stylesheet" href="styles.css"-->
-    <link rel="stylesheet" href="/_carousel.scss">
+    <!--link rel="stylesheet" href="/_carousel.scss"-->
     <title>Bootstrap Example</title>
 </head>
 
 <body>
     <style>
         body {
-            background-color: rgba(44, 49, 73, 0.644);
+            background-color: rgb(33, 37, 58);
+            background-image: linear-gradient (green, yellow);
             height: auto;
         }
-        
+
         a #menu {
             top: 30px;
             left: 0;
@@ -24,29 +27,31 @@
             height: 590px;
             background-color: rgb(60, 36, 118);
         }
-        
+
         #banner {
             padding-top: 1px;
             padding-bottom: 2px;
             float: fixed;
         }
-        
+
         ul {
             list-style: none;
             display: flex;
             align-items: center;
             height: 100%;
         }
-        
+
         li {
             margin-right: 20px;
         }
-        
+
         nav {
-            overflow: visible;
-            background-color: #000;
+            /*overflow: visible;*/
+            float: fixed;
+            background-color: rgb(33, 37, 58);
+
         }
-        
+
         nav a {
             float: left;
             color: rgba(238, 212, 212, 0.867);
@@ -55,7 +60,7 @@
             font-size: 17px;
             text-decoration: none;
         }
-        
+
         nav a:hover {
             background-color: #ddd;
             color: #000;
@@ -103,82 +108,72 @@
     </header>
 
     <style>
-        /*.card {
-            background-color: rgb(46, 46, 51);
-            color: rgb(166, 74, 216);
-            align-items: center;
-            width: 300px;
-            height: 350px;
-            border-color: rgb(101, 106, 106);
-            text-align: center;
-            border-radius: 10px;
-            padding-top: 20px;
-            padding-left: 20px;
-            padding-right: 20px;
-            margin: 2%;
-        }*/
-        
         h5 {
             text-align: center;
         }
-        
+
         section2 {
             margin: left;
             color: beige;
         }
-        
+
+        h2 {
+            text-align: center;
+        }
+
         footer {
             margin: left;
             color: beige;
         }
-        
-        h2 button-1 {
+
+        h2 button {
             color: blue;
         }
-        
+
         .container {
-            width: 1150px;
+            /*width:max-content;*/
             padding: 20px;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-wrap: wrap;
         }
-        
+
         .container .card {
-            position: relative;
+            position: left;
             padding: 10px;
-            width: 300px;
-            height: 300px;
-            background-color: hwb(240 18% 80%);
+            width: 310px;
+            height: 200px;
+            background-color: rgb(45, 50, 77);
             color: rgb(134, 216, 18);
             margin: 20px;
             border-radius: 20px;
             border: 1.5px solid black;
-            text-align: center;
+            text-align: justify;
             overflow: hidden;
             transition: 0.5s;
+            box-shadow: 20px 10px 20px rgb(8, 10, 22);
+            ;
         }
-        
+
         .container .card .card-body a {
-            position: relative;
+            position: center;
             display: inline-block;
             padding: relative;
             color: #fff;
-            background-color: rgb(9, 16, 11);
-            border-radius: 20px;
+            background-color: rgb(17, 19, 34) border-radius: 20px;
             text-decoration: none;
-            transition: 0.5s;
-            outline: none;
+            outline::backdrop;
             margin-top: 30px;
             box-sizing: content-box;
         }
-        
+
         .container .card:hover {
-            background-color: rgba(70, 70, 72, 0.6);
-            color: rgb(223, 219, 219);
-            margin-top: -30px;
-            box-shadow: 12px 20px 25px rgba(35, 35, 36, 0.645);
+            background-color: rgb(33, 37, 58);
+            border: 1px solid rgba(222, 222, 247, 0.651);
+            transition: 1.4s;
+            width: 320px;
+            height: 230px;
         }
     </style>
 
@@ -186,46 +181,54 @@
     <section>
         <div class=""></div>
 
-        <div class="container ">
+        <div class="container">
             <div class="card ">
-                <h2>Plano 1</h2>
+                <h2>FIDELIDADE</h2>
                 <div class="card-body ">
-                    <h5 class="card-title ">FIDELIDADE</h5>
+                    <h5 class="card-title "></h5>
                     <P class="card-text ">A cada 5 banhos, ganha-se 01 tosa</P>
-                    <a href="./cadastro.html " class="button ">Clique aqui</a>
+                    <a href="./cadastro.html " class="button">Clique aqui</a>
                 </div>
             </div>
             <div class="card ">
-                <h2>Plano 02</h2>
+                <h2>FIDELIDADE</h2>
                 <div class="card-body ">
-                    <h5 class="card-title ">FIDELIDADE</h5>
-                    <P class="card-text ">Faça um checkup completo com consulta e exames no seu pet e ganhe uma consulta com a nutricionista.</P>
-                    <a href="./cadastro.html " class="button ">Clique aqui</a>
+                    <h5 class="card-title"></h5>
+                    <P class="card-text">Faça um checkup completo com consulta e exames no seu pet e ganhe uma consulta
+                        com a nutricionista.</P>
+                    <a href="./cadastro.html " class="button">Clique aqui</a>
                 </div>
             </div>
             <div class="card ">
-                <h2>Plano 03</h2>
+                <h2>FIDELIDADE</h2>
                 <div class="card-body ">
-                    <h5 class="card-title ">FIDELIDADE</h5>
+                    <h5 class="card-title "></h5>
                     <P class="card-text ">A cada 5 banhos, ganhe um banho grátis.</P>
-                    <a href="./cadastro.html " class="button ">Clique aqui</a>
+                    <a href="./cadastro.html " class="button">Clique aqui</a>
                 </div>
             </div>
         </div>
     </section>
+    <br><br>
     <section2>
-        <a link href="http://www.google.com.br " class="button ">Felicidade animal</a>
+        <a link href="http://www.google.com.br " class="button">Felicidade animal</a>
         <!--Deve ter um link, que abre um artigo da web sobre casos felizes com animais. <br>Ex: Adoção de pet.Cachorra que salvou bebê abandonado...
         <br>Deve ser atraente para que o usuário sinta vontade de ler. Deve conter um campo para o usuário comentar o artigo.-->
     </section2>
     <footer>
-        <br>
-        <p class=" botton ">Autor: Thomas - O cão -<a href="autor.html ">Sobre o autor</a>
+        <br><br>
+        <p class=" botton ">Autor: Thomas - O cão -<a href="autor.html">Sobre o autor</a>
     </footer>h2
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js " integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM " crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js "
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo "
+        crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js "
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
+        crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js "
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM "
+        crossorigin="anonymous "></script>
 </body>
 
 
