@@ -12628,49 +12628,46 @@ fieldset:disabled .btn {
 
 /*Transição dos cards - Personalização da pagina*/
 
-body{
-    background-color:rgb(33, 37, 58) ;
+body {
+    background-color: rgb(33, 37, 58);
     background: linear-gradient(360deg, rgb(33, 37, 58), rgba(33, 37, 58, 0.5));
-    color: whitesmoke;
+    */ color: whitesmoke;
     height: 100%;
     max-width: 100vw;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 
 }
 
 /*Dimensionamento do logo*/
 .imglogo {
-    margin:0;
+    margin: 0;
     margin-left: 10px;
-    width: 10%;
-    height: 0%;
+    width: auto;
+    height: auto;
     border-radius: 10px;
 }
 
-#indicadores button{
-   width: 3%;
+#indicadores button {
+    width: 3%;
 }
 
 #menu {
-    top: 1000px;
+    top: 10px;
     left: 10px;
-    width: 50px;
-    height: 25%;
-    /*background-color: rgb(33, 37, 58);*/
-    /*background-color:rgb(33, 37, 58) ;*/
-    /*background: linear-gradient(180deg, rgb(33, 37, 58), rgba(33, 37, 58, 0.5));*/
+    background-color: rgb(33, 37, 58);
+    background: linear-gradient(180deg, rgb(33, 37, 58), rgba(33, 37, 58, 0.5));
     color: whitesmoke;
 }
 
 #banner {
-    margin: 0;
+    margin: 1px;
     padding-top: 0px;
-    padding-bottom: 0px;    
+    padding-bottom: 0px;
     display: 200%;
     float: fixed;
-    width: 100%;
-    height:100vm;
+    width: 99%;
+    height: 90vm;
 }
 
 ul {
@@ -12689,6 +12686,9 @@ nav {
     display: flexbox;
     float: fixed;
     background-color: rgb(33, 37, 58);
+    height: 100%;
+    width: 100%;
+    overflow: auto;
 
 }
 
@@ -12710,18 +12710,13 @@ nav a:hover {
 
 header {
     /*box-shadow: 20px 20px 20px rgb(13, 14, 15);*/
-    margin: 0px;
-    height: 490px;
-     
+    /*margin: 0px;
+    height: 330px;*/
+
 }
 
-/*h5 {
+h5 {
     text-align: center;
-}*/
-
-.section2 {
-    margin: left;
-    color: beige;
 }
 
 h2 {
@@ -12772,7 +12767,7 @@ h2 button {
 }
 
 .card-body {
-    
+
     position: center;
     display: inline-block;
     padding-bottom: 1px;
@@ -12803,20 +12798,19 @@ h2 button {
 
 
 #imgthomas {
-    margin:0;
-    width: 360px;
-    height: 320px;
-    border: 1px solid rgba(175, 178, 194, 0.4);
+    margin: 0;
+    /*border: 1px solid rgba(175, 178, 194, 0.4);*/
     box-shadow: 20px 20px 20px rgb(8, 10, 22);
     box-shadow: 30px 30px 30px rgb(8, 10, 22);
     cursor: pointer;
+   /* float: left;*/
 }
 
-#img {
-    margin:5px;
-    height: 480px;
-    width: 99%;
-    border-radius:10px;
+img {
+    margin: 5px;
+    /*height: 0px;*/
+    width: 95%;
+    border-radius: 10px;
     box-shadow: 20px 10px 20px rgb(8, 10, 22);
 }
 
@@ -12855,14 +12849,19 @@ h2 button {
 }
 
 footer {
-   background: #ffab6f;
+    background: #ffab6f;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     width: 100%;
     height: 15%;
-    /*position:var(--bs-toast-padding-x);*/
     bottom: 100%;
     left: 1em;
     text-align: center;
     color: black;
+}
+
+p,
+label,
+h1 {
+    color: whitesmoke
 }
