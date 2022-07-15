@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>PET SHOP THOMAS CADASTRO DE CLIENTES</title>
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html"><img class="imglogo" src="./img/logo.png" style="float:left"></a></h1>
+
+    <nav id="menu">
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="banho.html">Banho</a></li>
+            <li><a href="tosa.html">Tosa</a></li>
+            <li><a href="consulta.html">consulta</a></li>
+        </ul>
+    </nav>
+    <h2 id="titulo">Cadastro</h2>
+    <form action="confere_cadastro.html">
+        <form>
+            <!--nome completo, endereço, nome do pet, raça, idade do pet, doenças-->
+            <!--A tag REQUIRED obriga o preenchimento dos dados nos campos-->
+            <label for="nomecompleto">Nome do tutor do pet*</label><br>
+            <input type="text " id="nomecompleto" name="nomecompleto" value="" required><br>
+            <label for="endereco">Endereço*</label><br>
+            <input type="text " id="endereco" name="endereco" value="" required><br>
+            <label for="nomePet">Nome do Pet*</label><br>
+            <input type="text" id="nomePet" name="nomePet" value="" required><br>
+            <label for="raca"><strong>Raça*</strong></label><br>
+            <input type="text" id="raca" name="raca" value="" required><br>
+            <label for="lname ">Idade do Pet*</label><br>
+            <input type="text " id="idadePet" name="idadePet" value="" required><br>
+            <label for="lname ">Histórico de doenças</label><br>
+            <input type="text " id="doenca" name="doenca" value=""><br>
+            <br>* Campos obrigatórios<br>
+            <input type="submit" value="Salvar dados">
+
+            <input type="reset" value="Limpar dados">
+        <form>
+    </form>
+
+<br>
+<footer>
+    <p class="botton ">Autor:Thomas - O cão - <a href="/autor.html">Sobre o autor</a>
+</footer>
+</body>
+</html>
