@@ -4,8 +4,21 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./scss/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="import" href="./scss/custom.scss">
+    <link rel="stylesheet" href="./scss/bootstrap.min.css">
     <!--link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"-->
+    <!--importando o bootstrap para o custom.scss-->
+    <!--link rel="import" href="./scss/bootstrap.min.css"-->
+    <!--link rel="import" href="./scss/bootstrap/scss/_variables.scss"-->
+    <!--link rel="import" href="/scss/bootstrap/scss/mixins/">
+
+    //opcionais
+
+    <link rel="import" href="./scss/bootstrap/scss/reboot">
+    <link rel="import" href="./scss/bootstrap/scss/type">
+    <link rel="import" href="./scssbootstrap/scss/images">
+    <link rel="import" href="./scss/bootstrap/scss/code">
+    <link rel="import" href="./scss/bootstrap/scss/grid"-->
 
     <title>PET SHOP THOMAS</title>
 </head>
@@ -56,10 +69,9 @@
         <div class="tab-pane fade" id="messages" role="tabpanel" aria-labelledby="messages-tab">...</div>
         <div class="tab-pane fade" id="settings" role="tabpanel" aria-labelledby="settings-tab">...</div>
       </div-->
-
-    <h1><a href="index.html"><img class="imglogo" src="./img/logo 193x209.png" style="float:left"></a></h1>
     <nav>
         <ul>
+            <h1><a href="index.html"><img class="imglogo" src="./img/logo 193x209.png" style="float:left"></a></h1>
             <li><a href="home.html">Home</a></li>
             <li><a href="cadastro.html">Cadastro</a></li>
             <li><a href="#">Serviço</a></li>
@@ -68,43 +80,42 @@
             <li><a href="consulta.html">consulta</a></li>
         </ul>
     </nav>
-    <div>
-        <section>
-            <div class="container">
-                <div class="card">
-                    <h3>FIDELIDADE</h3>
-                    <div class="card-body ">
-                        <h5 class="card-title "></h5>
-                        <P class="card-text ">A cada 5 banhos, ganha-se 01 tosa</P>
-                        <a href="./cadastro.html " class="btnCard">Clique aqui</a>
-                    </div>
+    <section>
+        <h2>Planos de Fidelidade Pet Shop Thomas</h2>
+        <div class="container">
+            <div class="card">
+                <h3>FIDELIDADE</h3>
+                <div class="card-body ">
+                    <h5 class="card-title "></h5>
+                    <P class="card-text ">A cada 5 banhos, ganha-se 01 tosa</P>
+                    <a href="./cadastro.html " class="btnCard">Clique aqui</a>
                 </div>
-                <div class="card">
-                    <h3>FIDELIDADE</h3>
-                    <div class="card-body">
-                        <h5 class="card-title"></h5>
-                        <P class="card-text">Faça um checkup completo com consulta e exames no seu pet e ganhe uma
-                            consulta
-                            com a nutricionista.</P>
-                        <a href="./cadastro.html " class="btnCard">Clique aqui</a>
-                    </div>
+            </div>
+            <div class="card">
+                <h3>FIDELIDADE</h3>
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <P class="card-text">Faça um checkup completo com consulta e exames no seu pet e ganhe uma
+                        consulta
+                        com a nutricionista.</P>
+                    <a href="./cadastro.html " class="btnCard">Clique aqui</a>
                 </div>
-                <div class="card">
-                    <h3>FIDELIDADE</h3>
-                    <div class="card-body">
-                        <h5 class="card-title "></h5>
-                        <P class="card-text ">A cada 5 banhos, ganhe um banho grátis.</P>
-                        <a href="./cadastro.html " class="btnCard">Clique aqui</a>
-                    </div>
+            </div>
+            <div class="card">
+                <h3>FIDELIDADE</h3>
+                <div class="card-body">
+                    <h5 class="card-title "></h5>
+                    <P class="card-text ">A cada 5 banhos, ganhe um banho grátis.</P>
+                    <a href="./cadastro.html " class="btnCard">Clique aqui</a>
                 </div>
-        </section>
-    </div>
-    <div>
-        <section2>
-            <a link href="http://www.google.com.br " class="button">Felicidade animal</a>
-            
-        </section2>
-    
+            </div>
+    </section>
+
+    <section2>
+        <h2>Histórias de Pet</h2>
+        <a link href="http://www.google.com.br " class="button">Felicidade animal</a>
+    </section2>
+
     <!--script src="/bootstrap.bundle.min.js"></script-->
     <!--script src="/bootstrap.bundle.min.js"></script-->
     <!--script src="/bootstrap.bundle.min.js"></script-->
@@ -119,7 +130,7 @@
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 "
         crossorigin="anonymous "></script>
     <br>
-    
+
     <footer>
         <p class="botton">Autor:Thomas - O cão - <a href="autor.html">Sobre o autor</a>
     </footer>
