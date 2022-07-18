@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta nome="viewport" content="width=device-width, initial-scale=1.0">
+     <title>LocalStorage com JS</title>
+</head>
+
+<body>
+    <button id="criaStorage">Criar Storage</button>
+
+    <div id="Conteudo"></div>
+
+    <!--script src="./script.js"></script-->
+
+    <script type="text/javascript">
+        cadastrogeral=[]
+        cadastro= {
+            cpf:"526.584.522-34",
+            nomeCompleto:"João Paulo",
+            endereco:"QNA 22 lote 1A",
+            email:"joaobrito@gmail.com",
+            nomePet:"Thomas",
+            raca:"Cocker Spanel",
+            cidade:"Brasília",
+            estado:"DF",
+            historico:"Nenhum"
+       }
+
+       cadastrogeral.push(cadastro);
+
+       cadastro= {
+            cpf:"226.115.841-20",
+            nomeCompleto:"Paulo Cesar",
+            endereco:"SHIS 19 lote 20",
+            email:"paulocesar@gmail.com",
+            nomePet:"Tio",
+            raca:"BullDog",
+            cidade:"Brasília",
+            estado:"DF",
+            historico:"Cegueira olho direito"
+       }
+
+       cadastrogeral.push(cadastro);
+
+       cadastro= {
+            cpf:"485.555.694-74",
+            nomeCompleto:"Maria Laura",
+            endereco:"Rua 124, conjunto C casa 23",
+            email:"mlaura@gmail.com",
+            nomePet:"Tuco",
+            raca:"Pastor Alemão",
+            cidade:"Natal",
+            estado:"RN",
+            historico:"Cegueira olho direito"
+       }
+
+       cadastrogeral.push(cadastro);
+    
+    //localStorage.cadastrogeral= JSON.stringify(cadastrogeral);
+    //let cadastro = localstorage.cadastro= JSON.parse(cadastro);
+
+    for (let cadastro of JSON.parse(localStorage.cadastrogeral));
+    console.log(user.cidade);
+    </script>
+    
+    document.getElementById("mydiv").
+    
+</body>
+
+</html>

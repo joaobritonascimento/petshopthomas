@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="import" href="./scss/custom.scss">
   <link rel="stylesheet" href="./scss/bootstrap.min.css">
-  
+
   <title>PET SHOP THOMAS</title>
 </head>
 
@@ -15,49 +15,53 @@
   <header>
     <nav>
       <ul>
-          <h1><a href="index.html"><img class="imglogo" src="./img/logo 150x150.png" style="float:left"></a></h1>
-          <li><a href="home.html">Home</a></li>
-          <li><a href="cadastro.html">Cadastro</a></li>
-          <li><a href="#">Serviços</a></li>
-          <li><a href="banho.html">Banho</a></li>
-          <li><a href="tosa.html">Tosa</a></li>
-          <li><a href="consulta.html">consulta</a></li>
+        <h1><a href="index.html"><img class="imglogo" src="./img/logo 150x150.png" style="float:left"></a></h1>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="cadastro.html">Cadastro</a></li>
+        <li><a href="#">Serviços</a></li>
+        <li><a href="banho.html">Banho</a></li>
+        <li><a href="tosa.html">Tosa</a></li>
+        <li><a href="consulta.html">consulta</a></li>
       </ul>
-  </nav>
+    </nav>
   </header>
 
   <form>
     <h1>CADASTRO</h1>
 
+    <div class="form-group col-md-3">
+      <label for="inputCpf" >CPF*</label>
+      <input type="text" class="form-control" name="cpf" id="inputcpf" placeholder="CPF">
+    </div>
     <div class="form-group col-md-6">
       <label for="inputNome">Nome Completo*</label>
-      <input type="text" class="form-control" id="inputNome" placeholder="Nome Completo">
+      <input type="text" class="form-control" name="nomeCompleto" id="inputNome" placeholder="Nome Completo">
     </div>
     <div class="form-group col-md-6">
       <label for="inputEndereco">Endereço</label>
-      <input type="text" class="form-control" id="inputEndereco" placeholder="Endereço">
+      <input type="text" class="form-control" id="endereco" placeholder="Endereço">
     </div>
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="inputEmail4">Email</label>
-        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+        <input type="email" class="form-control" id="email" placeholder="Email">
       </div>
     </div>
     <div class="form-row col-md-3">
       <label for="inputPet">Nome do pet*</label>
-      <input type="text" class="form-control" id="inputPet" placeholder="Nome do pet">
+      <input type="text" class="form-control" id="nomePet" placeholder="Nome do pet">
     </div>
     <div class="form-group col-md-3">
       <label for="inputRaca">Raça</label>
-      <input type="text" class="form-control" id="inputRaca" placeholder="Raça">
+      <input type="text" class="form-control" id="raca" placeholder="Raça">
     </div>
     <div class="form-group col-md-3">
       <label for="inputCidade">Cidade</label>
-      <input type="text" class="form-control" id="inputCidade" placeholder="Cidade">
+      <input type="text" class="form-control" id="cidade" placeholder="Cidade">
     </div>
     <div class="form-group col-md-2">
       <label for="inputEstado">Estado</label>
-      <select id="inputEstado" class="form-control">
+      <select id="estado" class="form-control">
         <option selected>Escolher...</option>
         <option>DF</option>
         <option>SP</option>
@@ -72,12 +76,11 @@
       <input type="text" class="form-control" id="inputCEP">
     </div>
     </div>
-  <label>* Campos Obrigatorios</label><br>
+    <label>* Campos Obrigatorios</label><br>
 
-    <button type="submit" class="btn btn-primary">Salvar</button>
+    <button type="submit" onclick="gravarCadastro" class="btn btn-primary">Salvar</button>
   </form>
-
-
+  <script src="./script.js"></script>
 </body>
 
 </html>
