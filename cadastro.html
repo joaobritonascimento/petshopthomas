@@ -78,26 +78,11 @@
     <label>* Campos Obrigatorios</label><br>
 
     <button type="button" onclick="salvarCadastro()" class="btn btn-primary">Salvar</button>
-    <button type="button" onclick="carregarCadastro()" class="btn btn-primary">Carregar</button>
-    <button type="button" onclick="apagarCadastro()" class="btn btn-primary">Apagar</button>
+    <!--button type="button" onclick="carregarCadastro()" class="btn btn-primary">Carregar</button>
+    <button type="button" onclick="apagarCadastro()" class="btn btn-primary">Apagar</button-->
   
 
-  <label>
-    <input id="dado"></label>
-  <button type="button" onclick="salvarCadastroteste()">Salvar</button>
-  <button type="button" onclick="carregarCadastroteste()">Carregar</button>
 
-  <script>
-    function salvarCadastroteste(){
-      if (localStorage.info) {
-        localStorage.info = document.getElementById("dado").value;
-      }
-    }
-  
-    function carregarCadastroteste(){
-      document.getElementById("dado").value = localStorage.info;
-    }
-  </script>
 </body>
 
 </html>

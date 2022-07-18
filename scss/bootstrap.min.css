@@ -12638,6 +12638,44 @@ body {
     margin: 0;
 
 }
+section{
+    display:flex;
+    flex-direction: row;
+}
+header {
+    /*box-shadow: 20px 20px 20px rgb(13, 14, 15);*/
+    margin: 0px;
+    /*height: 330px;*/
+
+}
+nav {
+    /*height:50vh;*/
+    display: flex;
+    float: fixed;
+    background-color: rgb(33, 37, 58);
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    flex:0;
+    margin-right: 1%;
+
+}
+
+
+aside{
+     height:60vh;
+     background-color: rgba(33, 37, 58,0.5);
+     margin-right: 1%;
+    
+}
+
+.container {
+    height:60vh;
+    border: 1px solid black;
+    justify-content: left;
+    display:flex;
+    border: none;
+  }
 
 /*Dimensionamento do logo*/
 .imglogo {
@@ -12660,14 +12698,14 @@ body {
     color: whitesmoke;
 }
 
-#banner {
-    margin: 1px;
+.banner {
+    margin: 10px;
     padding-top: 0px;
     padding-bottom: 0px;
-    display: 200%;
+    display: 90%;
     float: fixed;
     width: 99%;
-    height: 90vm;
+    height: 10vm;
 }
 
 ul {
@@ -12682,15 +12720,6 @@ li {
     margin-right: 20px;
 }
 
-nav {
-    display: flexbox;
-    float: fixed;
-    background-color: rgb(33, 37, 58);
-    height: 100%;
-    width: 100%;
-    overflow: auto;
-
-}
 
 nav a {
     float: left;
@@ -12709,43 +12738,31 @@ nav a:hover {
     
 }
 
-header {
-    /*box-shadow: 20px 20px 20px rgb(13, 14, 15);*/
-    /*margin: 0px;
-    height: 330px;*/
-
-}
 
 h5 {
     text-align: center;
 }
 
 h2 {
-    text-align: left;
-    margin-top: 40px;
+    text-align:center;
+    margin: 0;
 }
 
 h2 button {
     color: blue;
 }
 
-.container {
-    border: 1px solid black;
-    margin: 0;
-    justify-content: center;
-    display: flex;
-    border: none;
-    max-height: 150px;
-
+h3{
+    text-align: center;
 }
 
 .card {
-    padding: 1.5px;
+    padding: 10px;
     width: 300px;
-    height: 150px;
+    height: 250px;
     background-color: rgb(45, 50, 77);
     color: white;
-    margin: 15px;
+    margin: 25px;
     border-radius: 20px;
     border: 1px solid rgba(175, 178, 194, 0.4);
     text-align: center;
@@ -12758,7 +12775,7 @@ h2 button {
     padding: 8px 30px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    font-weight: 500;
+    font-weight: 300;
     border-radius: 8px;
     border-color: #523e02;
     transition: 0.8s;
@@ -12784,7 +12801,7 @@ h2 button {
     padding-bottom: 1px;
     border-radius: 20px;
     text-decoration: none;
-    margin-top: 5px;
+    margin-top: 1px;
     box-sizing: content-box;
 }
 
@@ -12792,8 +12809,8 @@ h2 button {
     background-color: rgb(#000);
     border: 1px solid rgba(222, 222, 247, 0.651);
     transition: 0.5s;
-    width: 305px;
-    height: 157px;
+    width: 310px;
+    height: 255px;
     padding-top: 1;
 }
 
