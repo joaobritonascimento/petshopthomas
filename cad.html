@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <div id="result"></div>
+  <div id="result2"></div>
+  <div id="demo"></div>
+
+  <div id="cadastrogeral_objeto"></div>
+
+  <div id="carros"></div>
+
+  <div id="cadastro"></div>
+  <script>
+    // Check browser support
+    if (typeof (Storage) !== "undefined") {
+      // Store
+      localStorage.setItem("lastname", "Smith");
+      // Retrieve
+      document.getElementById("result").innerHTML = localStorage.getItem("marca");
+      document.getElementById("result2").innerHTML = localStorage.getItem("lastname");
+      document.getElementById("demo").innerHTML = "Hello World";
+
+      //const arr = localStorage.getItem('cadastrogeral');
+      const cadastro = localStorage.getItem("cadastrogeral");
+      var cadGeral=JSON.parse(cadastro);
+      document.getElementById("cadastro").innerHTML=cadGeral;
+    
+
+      const text = '{"name":"John", "birth":"1986-12-14", "city":"New York"}';
+      let obj = JSON.parse(text);
+      obj.birth = new Date(obj.birth);
+
+      document.getElementById("carros").innerHTML = obj.name + ", " + obj.birth;
+
+      //let array1 = JSON.parse(localStorage.getItem(cadastrogeral));
+
+
+
+    } else {
+      document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+    }
+  </script>
+
+</body>
+
+</html>

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="import" href="./scss/custom.scss">
   <link rel="stylesheet" href="./scss/bootstrap.min.css">
-
+  
   <title>PET SHOP THOMAS</title>
 </head>
 
@@ -26,11 +26,10 @@
     </nav>
   </header>
 
-  <form>
     <h1>CADASTRO</h1>
 
     <div class="form-group col-md-3">
-      <label for="inputCpf" >CPF*</label>
+      <label for="inputCpf">CPF*</label>
       <input type="text" class="form-control" name="cpf" id="inputcpf" placeholder="CPF">
     </div>
     <div class="form-group col-md-6">
@@ -39,29 +38,29 @@
     </div>
     <div class="form-group col-md-6">
       <label for="inputEndereco">Endereço</label>
-      <input type="text" class="form-control" id="endereco" placeholder="Endereço">
+      <input type="text" class="form-control" id="inputEndereco" placeholder="Endereço">
     </div>
     <div class="form-row">
       <div class="form-group col-md-6">
         <label for="inputEmail4">Email</label>
-        <input type="email" class="form-control" id="email" placeholder="Email">
+        <input type="email" class="form-control" id="inputEmail" placeholder="Email">
       </div>
     </div>
     <div class="form-row col-md-3">
       <label for="inputPet">Nome do pet*</label>
-      <input type="text" class="form-control" id="nomePet" placeholder="Nome do pet">
+      <input type="text" class="form-control" id="inputNomePet" placeholder="Nome do pet">
     </div>
     <div class="form-group col-md-3">
       <label for="inputRaca">Raça</label>
-      <input type="text" class="form-control" id="raca" placeholder="Raça">
+      <input type="text" class="form-control" id="inputRaca" placeholder="Raça">
     </div>
     <div class="form-group col-md-3">
       <label for="inputCidade">Cidade</label>
-      <input type="text" class="form-control" id="cidade" placeholder="Cidade">
+      <input type="text" class="form-control" id="inputCidade" placeholder="Cidade">
     </div>
     <div class="form-group col-md-2">
       <label for="inputEstado">Estado</label>
-      <select id="estado" class="form-control">
+      <select id="inputEstado" class="form-control">
         <option selected>Escolher...</option>
         <option>DF</option>
         <option>SP</option>
@@ -78,9 +77,27 @@
     </div>
     <label>* Campos Obrigatorios</label><br>
 
-    <button type="submit" onclick="gravarCadastro" class="btn btn-primary">Salvar</button>
-  </form>
-  <script src="./script.js"></script>
+    <button type="button" onclick="salvarCadastro()" class="btn btn-primary">Salvar</button>
+    <button type="button" onclick="carregarCadastro()" class="btn btn-primary">Carregar</button>
+    <button type="button" onclick="apagarCadastro()" class="btn btn-primary">Apagar</button>
+  
+
+  <label>
+    <input id="dado"></label>
+  <button type="button" onclick="salvarCadastroteste()">Salvar</button>
+  <button type="button" onclick="carregarCadastroteste()">Carregar</button>
+
+  <script>
+    function salvarCadastroteste(){
+      if (localStorage.info) {
+        localStorage.info = document.getElementById("dado").value;
+      }
+    }
+  
+    function carregarCadastroteste(){
+      document.getElementById("dado").value = localStorage.info;
+    }
+  </script>
 </body>
 
 </html>
